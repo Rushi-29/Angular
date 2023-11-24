@@ -1,0 +1,53 @@
+<!-- learning-platform.component.html -->
+
+<div class="container">
+    <h2 class="mt-4 mb-4">Add a New Course</h2>
+  
+    <form [formGroup]="courseForm" (ngSubmit)="onSubmit()">
+      <!-- Course Name -->
+      <div class="form-group">
+        <label for="courseName">Course Name:</label>
+        <input type="text" class="form-control" id="courseName" formControlName="courseName" required>
+      </div>
+  
+      <!-- Author -->
+      <div class="form-group">
+        <label for="author">Author:</label>
+        <input type="text" class="form-control" id="author" formControlName="author" required>
+      </div>
+  
+      <!-- Duration -->
+      <div class="form-group">
+        <label for="duration">Duration:</label>
+        <input type="text" class="form-control" id="duration" formControlName="duration" required>
+      </div>
+  
+      <!-- Price -->
+      <div class="form-group">
+        <label for="price">Price:</label>
+        <input type="text" class="form-control" id="price" formControlName="price" required>
+      </div>
+  
+      <!-- Description -->
+      <div class="form-group">
+        <label for="description">Description:</label>
+        <textarea class="form-control" id="description" formControlName="description" rows="3" required></textarea>
+      </div>
+  
+      <!-- Rating -->
+      <div class="form-group">
+        <label for="rating">Rating:</label>
+        <input type="number" class="form-control" id="rating" formControlName="rating" required>
+      </div>
+  
+      <!-- Category/Type -->
+      <div class="form-group">
+        <label for="type">Type:</label>
+        <input class="form-control" id="description" formControlName="type"  required>
+      </div>
+  
+      <!-- Submit Button -->
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+  

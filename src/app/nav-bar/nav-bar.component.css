@@ -1,0 +1,5 @@
+.library-icon {
+    width: 30px; /* Adjust the width as needed */
+    height: auto; /* Automatically adjust the height to maintain aspect ratio */
+    margin-right: 10px; /* Add some margin to separate the icon from the text */
+  }
