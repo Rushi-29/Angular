@@ -10,6 +10,10 @@ import { LearningServiceService } from 'src/app/service/learning-service.service
 })
 export class LoginComponent implements OnInit {
   loginForm!:FormGroup
+  isLogIn!:boolean;
+
+  
+
   
   constructor(private formBuilder: FormBuilder, private learnService:LearningServiceService) { }
 

@@ -38,8 +38,8 @@ export class LearningServiceService  {
     return this.client.get( `${this.addUser}/${userId}/${courseId}`)
    }
    deletefromcart(userId:any,courseId:any){
-    return this.client.get( `${this.deleteCart}/${userId}/${courseId}`)
+    return this.client.delete( `${this.deleteCart}/${userId}/${courseId}`)
    }
 
-   
+
 }

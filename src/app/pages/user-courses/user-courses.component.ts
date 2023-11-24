@@ -20,7 +20,7 @@ data!:any[];
     this.learnService.getAllCourses().subscribe(a=>this.data=a);
   }
   onAddCart(course: any) {
-    this.learnService.linkUserCourse(4,course.courseId).subscribe(()=>console.log("inside linked method"))
+    this.learnService.linkUserCourse(1,course.courseId).subscribe(()=>console.log("inside linked method"))
     }
 
 }
