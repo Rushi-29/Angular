@@ -1,0 +1,34 @@
+<div class="signup-modal">
+  <h2 mat-dialog-title>Sign Up</h2>
+  <form (ngSubmit)="onSubmit()" #signupForm="ngForm">
+    <mat-form-field>
+      <input matInput placeholder="Name" [(ngModel)]="name" name="name" required>
+      <mat-error *ngIf="signupForm.controls['name'].hasError('required')">Name is required</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput type="email" placeholder="Email" [(ngModel)]="email" name="email" required>
+      <mat-error *ngIf="signupForm.controls['email'].hasError('required')">Email is required</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput type="password" placeholder="Password" [(ngModel)]="password" name="password" required>
+      <mat-error *ngIf="signupForm.controls['password'].hasError('required')">Password is required</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Gender</mat-label>
+      <mat-select placeholder="Select Gender" [(ngModel)]="gender" name="gender" required>
+        <mat-option *ngFor="let value of getCategoryValues()" [value]="value">{{ value }}</mat-option>
+      </mat-select>
+      <mat-error *ngIf="signupForm.controls['gender'].hasError('required')">Gender is required</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput [matDatepicker]="picker" placeholder="Birth Date" [(ngModel)]="birthDate" name="birthDate" required>
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+      <mat-error *ngIf="signupForm.controls['birthDate'].hasError('required')">Birth Date is required</mat-error>
+    </mat-form-field>
+    <div class="actions btn">
+      <button mat-button type="submit" [disabled]="signupForm.invalid">Sign Up</button>
+      <button mat-button type="button" (click)="closeDialog()">Close</button>
+    </div>
+  </form>
+</div>

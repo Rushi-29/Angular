@@ -4,6 +4,7 @@
     <h2 class="mt-4 mb-4">Add a New Course</h2>
   
     <form [formGroup]="courseForm" (ngSubmit)="onSubmit()">
+      
       <!-- Course Name -->
       <div class="form-group">
         <label for="courseName">Course Name:</label>
@@ -43,8 +44,20 @@
       <!-- Category/Type -->
       <div class="form-group">
         <label for="type">Type:</label>
-        <input class="form-control" id="description" formControlName="type"  required>
+        <select class="form-control" id="type" formControlName="type" required>
+          <option *ngFor="let type of categories" [value]="type">{{ type }}</option>
+        </select>
       </div>
+      <div class="form-group">
+        <label for="courseName"></label>
+        <input type="text" class="form-control" id="imageUrl" formControlName="imageUrl" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="rating">availableSlots:</label>
+        <input type="number" class="form-control" id="rating" formControlName="availableSlots" required>
+      </div>
+   
   
       <!-- Submit Button -->
       <button type="submit" class="btn btn-primary">Submit</button>

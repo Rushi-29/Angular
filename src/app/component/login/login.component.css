@@ -1,0 +1,134 @@
+body {
+  background-color: #1f1f1f; /* Dark gray background texture */
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.btn-facebook {
+  background-color: #4267B2; /* Facebook blue */
+  color: #fff;
+}
+
+.mat-form-field {
+  flex: 1;
+}
+
+.mat-dialog-container {
+  background-color: #2c2c2c; /* Dark gray background for the modal */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.mat-dialog-title {
+  background-color: #1a1a1a; /* Darker gray for title bar */
+  color: #fff;
+  border-radius: 8px 8px 0 0;
+}
+
+.mat-dialog-title + div {
+  padding: 20px;
+}
+
+.mat-dialog-actions {
+  justify-content: flex-end;
+  padding: 15px;
+  background-color: #efef15;
+}
+
+/* You can add more styles as needed */
+/* Add these styles to your global CSS file or component-specific styles */
+
+body {
+  background-color: #282c35; /* Dark background color for the entire page */
+  color: #ffffff; /* Text color for the entire page */
+}
+
+/* Navbar */
+.navbar {
+  background-color: #007bff; /* Navbar background color */
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-color: #ffffff; /* Navbar toggler icon color */
+}
+
+/* Sign up button */
+.btn-primary {
+  background-color: #28a745; /* Green button background color */
+  color: #ffffff; /* Button text color */
+}
+
+/* About Us Section */
+.mat-card {
+  background-color: #6b7075; /* Dark background color for cards */
+  color: #ffffff; /* Text color for cards */
+}
+
+/* Login Form Section */
+.card {
+  background: transparent; /* Transparent black background for cards */
+  color: #df0d0d;
+
+  /* background-image: Url('../../../assets/login-box.jpg'); Dark background color for cards */
+  color: #ffffff; /* Text color for cards */
+  background-size: cover; /* Cover the entire card with the background image */
+  background-position: center;
+  
+  /* width: 200px; Set the desired width */
+  /* height: 300px; Set the desired height */
+}
+
+.mat-form-field {
+  color: #ffffff; /* Text color for form fields */
+}
+
+.mat-form-field-underline {
+  background-color: #ffffff; /* Form field underline color */
+}
+
+.mat-form-field-label,
+.mat-form-field-placeholder {
+  color: #ffffff; /* Form field label and placeholder color */
+}
+
+.mat-raised-button {
+  background-color: #007bff; /* Button background color */
+  color: #ffffff; /* Button text color */
+}
+
+.mat-raised-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+.page-container {
+  background-image: url('../../../assets/darkmain.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0,0,0,0.8); /* Set your desired background color as a fallback */
+  /* Additional styles for the page-container, if needed */
+  padding: 20px; /* Add padding to the container if desired */
+}
+form{
+  padding-left: 200px;
+}
+
+/* Other styles for your existing elements can be added here */
+.card-title {
+  color: #fff;
+  font-weight: bolder;
+  font-size: 2.2rem;
+  /* background-color: #6b7075; */
+}
+/* #container-blur {
+  background-color: rgba(0,0,0,0.5);
+  height: 100%;
+  width: 100%;
+} */

@@ -1,9 +1,15 @@
 <!-- learning-platform.component.html -->
 
-<div class="container-fluid">
+<!-- <div  *ngIf="role === 'admin'">
   <div>
  <app-nav-bar></app-nav-bar>
 </div>
-
-  
-  <!--  -->
+</div>
+<div *ngIf="role==='user'">
+   <app-admin-nav-bar></app-admin-nav-bar>
+</div> -->
+<!-- <app-login></app-login>
+<app-admin-nav-bar></app-admin-nav-bar> -->
+<!-- <header>nav bar</header> -->
+<router-outlet></router-outlet>
+<!-- <footer>footer</footer> -->

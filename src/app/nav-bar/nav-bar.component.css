@@ -1,5 +1,32 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background-image: url('../../assets/online-learning-wallpapers.jpg'); /* Update with the correct path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  background-attachment: fixed; /* Keep the background fixed while scrolling */
+  margin: 0;
+  /* font-family: 'Arial', sans-serif;  */
+  color: white; /* Set text color to contrast with the background */
+}
+
+.page-container {
+  /* Additional styles for the page-container, if needed */
+  padding: 20px; /* Add padding to the container if desired */
+}
+
 .library-icon {
-    width: 30px; /* Adjust the width as needed */
-    height: auto; /* Automatically adjust the height to maintain aspect ratio */
-    margin-right: 10px; /* Add some margin to separate the icon from the text */
-  }
+  width: 30px; /* Adjust the width as needed */
+  height: auto; /* Automatically adjust the height to maintain aspect ratio */
+  margin-right: 10px; /* Add some margin to separate the icon from the text */
+}
+
+.course-list-container {
+  position: relative;
+  overflow: hidden;
+}

@@ -1,0 +1,20 @@
+/* Add this to your CSS file or in a style block within your HTML file */
+.attractive-heading {
+    color: #0f0d28; /* Set the text color to a nice blue */
+    font-size: 3.0em; /* Increase the font size */
+    font-family: 'Helvetica', sans-serif; /* Use a clean sans-serif font */
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow */
+    margin-bottom: 30px; /* Add some bottom margin for spacing */
+  }
+  .footer {
+    background-color: #5e666e;
+    padding: 20px 0;
+    text-align: center;
+    color: rgb(234, 224, 224);
+  }
+  
+  .footer h4 {
+    font-size: 24px; 
+    font-weight: bold;
+    margin-bottom: 10px; 
+  }

@@ -1,25 +1,72 @@
-<div class="container mt-5">
-    <div class="row justify-content-center">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container d-flex justify-content-end align-items-end">
+    <button type="button" class="btn btn-primary me-3" (click)="openSignupModal()">
+      Sign up for free
+    </button>
+  </div>
+</nav>
+<!-- Navbar -->
+
+<div class="page-container">
+  <div id="container-blur">
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <mat-card>
+          <img mat-card-image src="../../../../assets/Digital-learning-platform_Featured-Images.jpg"
+            alt="About Us Image">
+        </mat-card>
+        <mat-card>
+          <mat-card-content>
+            <h2 class="mb-3">About Us</h2>
+            <p>
+              Welcome to our learning platform! We are dedicated to providing high-quality courses to help you
+              enhance your skills and achieve your learning goals. Our platform offers a wide range of courses
+              on various topics, from programming and technology to business and creativity.
+            </p>
+            <p>
+              Our team of experienced instructors is committed to delivering engaging and informative content
+              to support your learning journey. Whether you are a beginner or an experienced professional,
+              there's something for everyone on our platform.
+            </p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+
+      <!-- Login Form Section -->
       <div class="col-md-6">
         <div class="card">
           <div class="card-body">
             <h2 class="card-title text-center mb-4">Login</h2>
-            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-              <div class="mb-3">
-                <label for="email" class="form-label">Email:</label>
-                <input type="email" class="form-control" id="email" formControlName="email" placeholder="Enter your email" required>
+            <form [formGroup]="loginForm" (ngSubmit)="login()">
+              <div class="mb-12">
+                <div class="mb-3">
+                  <mat-form-field>
+                    <mat-label class="text-center mb-4">Email</mat-label>
+                    <input matInput formControlName="username" required />
+                    <mat-error *ngIf="loginForm.get('username')?.hasError('required')">Email is required</mat-error>
+                  </mat-form-field>
+                </div>
               </div>
-  
               <div class="mb-3">
-                <label for="password" class="form-label">Password:</label>
-                <input type="password" class="form-control" id="password" formControlName="password" placeholder="Enter your password" required>
+                <mat-form-field appearance="fill">
+                  <mat-label>Password</mat-label>
+                  <input matInput type="password" formControlName="password" required />
+                  <mat-error *ngIf="loginForm.get('password')?.hasError('required')">Password is required</mat-error>
+                </mat-form-field>
               </div>
-  
-              <button type="submit" class="btn btn-primary w-100">Login</button>
+
+
+              <button mat-raised-button color="primary" type="submit" [disabled]="loginForm.invalid">Login</button>
             </form>
           </div>
         </div>
       </div>
     </div>
   </div>
-  
+  <div>
+    <br>
+  </div>
+</div>
+</div>

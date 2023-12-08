@@ -19,6 +19,22 @@ import { LibraryComponent } from './component/library/library.component';
 import { CartComponent } from './component/cart/cart.component';
 import { UserCoursesComponent } from './pages/user-courses/user-courses.component' 
 import { MatTableModule } from '@angular/material/table';
+import { AdminNavBarComponent } from './Admin/admin-nav-bar/admin-nav-bar.component';
+import { FormsModule } from '@angular/forms';  
+import { MatButtonModule  } from '@angular/material/button';
+import { MatInputModule  } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatFormFieldModule } from '@angular/material/form-field';
+// import { UsersComponent } from './pages/user-List/users/users.component';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { UserTableComponent } from './pages/user-List/users/users.component';
+import { AddUserComponent } from './pages/add-user/add-user.component';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatBadgeModule } from '@angular/material/badge';
+import { OwnCoursesComponent } from './own-courses/own-courses.component';
+import { MatSortModule } from '@angular/material/sort';
 
 // const routs:Routes =[
 //   {}
@@ -37,6 +53,10 @@ import { MatTableModule } from '@angular/material/table';
     LibraryComponent,
     CartComponent,
     UserCoursesComponent,
+    AdminNavBarComponent,
+    UserTableComponent,
+    AddUserComponent,
+    OwnCoursesComponent,
     
   ],
   imports: [
@@ -48,7 +68,20 @@ import { MatTableModule } from '@angular/material/table';
     MatCardModule,
     MatToolbarModule,
     MatIconModule,
-    MatTableModule
+    MatTableModule,
+    FormsModule,
+    MatButtonModule,
+    MatInputModule,
+    MatSelectModule,
+    MatFormFieldModule,
+    MatPaginatorModule,
+    MatDatepickerModule,
+    MatDialogModule,
+    MatNativeDateModule,
+    MatBadgeModule,
+    MatSortModule,
+  
+
   ],
   providers: [],
   bootstrap: [AppComponent]

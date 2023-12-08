@@ -11,7 +11,7 @@ import { LearningServiceService } from 'src/app/service/learning-service.service
 })
 export class AddCourseComponent implements  OnInit {
   courseForm!: FormGroup;
-  // categories = Object.values(Category); 
+  categories = Object.values(Category); 
   
   constructor(private learnService : LearningServiceService ,private fb: FormBuilder, private routes :Router){}
   ngOnInit(): void {
@@ -19,13 +19,15 @@ export class AddCourseComponent implements  OnInit {
   }
   initializeForm(): void {
     this.courseForm = this.fb.group({
-      courseName: [''],
-      author: ['' ],
-      duration: [''],
-      price: [''],
-      description: [''],
-      rating: [''],
-      type: [''] 
+      imageUrl:['',Validators.required],
+      courseName: ['',Validators.required],
+      author: ['',Validators.required ],
+      duration: ['',Validators.required],
+      price: ['',Validators.required],
+      description: ['',Validators.required],
+      rating: ['',Validators.required],
+      type: ['',Validators.required] ,
+      availableSlots: ['5',Validators.required] 
     });
   }
   
@@ -40,6 +42,6 @@ export class AddCourseComponent implements  OnInit {
 
     // this.learnService.addCourse(this.courseForm.value)
     console.log("in onsubmit method")
-    this.routes.navigate(["/courses"])   
+    this.routes.navigate(["admin/courses"])   
   }
 }
